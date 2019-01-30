@@ -89,4 +89,4 @@ Hints:
 
 # Submission
 
-Submit `hello.c` and `head.c` files through the appropriate Blackbord group submission.
+Submit `hello.c` and `head.c` files through the appropriate Blackbord group submission. Include a group number and a list of group members with e-mails in a header comment of both programs.

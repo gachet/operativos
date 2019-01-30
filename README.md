@@ -2,10 +2,13 @@
 
 ## Labs
 
-First step is to setup xv6 local development environment. Follow [xv6 installation](xv6-install.md) instructions.
+First step is setup of a xv6 local development environment. Follow the [xv6 installation](xv6-install.md) instructions.
 
-### Lab0
-
+- [Lab0](lab0.md) (optional, but **highly** recommended, and it will be counted as extra credit)
+- [Lab1](lab1.md)
+- [Lab2](lab2.md)
+- [Lab3](lab3.md)
+- [Lab4](lab4.md)
 
 ## Resources
 

@@ -54,7 +54,7 @@ As mentioned before this will only work if you have 64bit windows 10.
 -   When you are done installing open a "Bash on Ubuntu on Windows"
     terminal console and type the following:
 
-          $ sudo apt-get update && sudo apt-get install git nasm build-essential qemu gdb
+          $ sudo apt-get update && sudo apt-get install git nasm build-essential qemu qemu-system-x86 gdb
 
 -   Modify the makefile. Find the following line:
 

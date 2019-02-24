@@ -1,7 +1,5 @@
 # Lab 0
 
-**Due Date: Feb 15 at midnight.**
-
 ## Academic Honesty
 Aside from the narrow exception for collaboration on homework, all work submitted in this course must be your own. Cheating and plagiarism will not be tolerated. If you have any questions about a specific case, please ask me.
 
@@ -12,7 +10,7 @@ This lab will provide a first glance on xv6 work. You'll write a program for xv6
 This can be broken up into a few steps:
 1. Create a file in the xv6 directory named hello.c
 2. Put code you need to implement printing "Hello world" into hello.c
-3. Edit the file Makefile , find the section UPROGS (which contains a list of programs to be built), and add a line to tell it to build your Hello World program. When you're done that portion of the Makefile should look like:
+3. Edit the file `Makefile`, find the section `UPROGS` (which contains a list of programs to be built), and add a line to tell it to build your Hello World program. When you're done that portion of the Makefile should look like:
 
 		UPROGS=\
 			_cat\
@@ -75,10 +73,10 @@ Hints:
 
 The traditional UNIX head utility can print out a configurable number of lines from the start of a file. Implement this behavior in your version of `head`. The number of lines to be printed should be specified via a command line argument as `head -NUM FILE`, for example `head -3 README` to print the first 3 lines of the file README. The expected output of that command is:
 
-        $ head -3 README
-        xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
-        Version 6 (v6). xv6 loosely follows the structure and style of v6,
-        but is implemented for a modern x86-based multiprocessor using ANSI C.
+    $ head -3 README
+    xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
+    Version 6 (v6). xv6 loosely follows the structure and style of v6,
+    but is implemented for a modern x86-based multiprocessor using ANSI C.
 
 If the number of lines is not given (i.e., if the first argument does not start with `-`), the number of lines to be printed should default to 10 as in the previous part.
 

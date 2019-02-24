@@ -73,7 +73,7 @@ As mentioned before this will only work if you have 64bit windows 10.
 
 -   Run following command
 
-        $ git clone git://github.com/mit-pdos/xv6-public.git
+        $ git clone https://github.com/wildart/xv6-public.git
 
 -   Make sure you can build and run xv6. To build the OS, use cd to change to the xv6 directory, and then run make to compile xv6:
 

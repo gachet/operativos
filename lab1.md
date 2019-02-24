@@ -199,11 +199,12 @@ functionality.
 
 You will modify `struct proc` in `proc.h` to include a new field,
 `uint start_ticks`. You will modify the routine `allocproc()` in `proc.c`
-so that this field is initialized to the value returned by `sys_uptime`
-system call. This allows the process to "know" when it was
-created. This will allow us to later calculate how long the process has been
-active. Put the initialization code right before the return at the end of the
-routine.
+so that this field is initialized to the value for the
+existing global kernel variable `ticks`. This allows the process to "know" when
+it was created. This will allow us to later calculate how long the process has
+been active. Put the initialization code right before the return at the end of
+the routine. Access to `ticks` variable requires a lock, see `sys_uptime`
+system call for more details.
 
 You will then modify the `procdump()` routine to print out the amount of
 time that each process has been active in system.

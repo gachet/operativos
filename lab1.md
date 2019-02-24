@@ -71,21 +71,21 @@ as follows:
 ### Conditional Compilation
 
 You are required to write your code in such a way so that if the some
-compilation flag is turned off (set to 0), e.g. `DATE_SYSCALL` then
+compilation flag is turned off (set to 0), e.g. `LAB1` then
 xv6 will function the same as the initial distribution. This means that
 your code will need to be *wrapped* in preprocessor directives. For example:
 
-    #ifdef DATE_SYSCALL
+    #ifdef LAB1
     int
     sys_date(void)
     {
-        struct rtcdate *d;
-        // code removed
+      struct rtcdate *d;
+      // code removed
     }
-    #endif
+    #endif // LAB1
 
 
-The statement `#ifdef DATE_SYSCALL` is a GNU GCC preprocessor directive that
+The statement `#ifdef LAB1` is a GNU GCC preprocessor directive that
 indicates that the code between this line and the matching `#endif` will
 only be included in the compiled program if the flag is *turned on*; that
 is, *defined*. Preprocessor directives are defined in the project Makefile.
@@ -159,10 +159,11 @@ for our system call will be in another file. You indicate that with the
             int
             sys_date(void)
             {
-                struct rtcdate *d;
+              struct rtcdate *d;
 
-                if(argptr(0, (void*)&d, sizeof(struct rtcdate)) < 0)
-                    return -1;
+              if(argptr(0, (void*)&d, sizeof(struct rtcdate)) < 0)
+                return -1;
+              return 0;
             }
 
 	    The rest of the routine is left as an exercise for the student. See the xv6 book for how to properly use the `argptr()` routine. Be sure to read and understand the comments for the `argptr()` routine in  `syscall.c` as this will become critical in later projects.

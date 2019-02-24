@@ -7,6 +7,7 @@ Course xv6 repository: https://github.com/wildart/xv6-public.git
 First step is setup of a xv6 local development environment. Follow the [xv6 installation](xv6-install.md) instructions.
 
 - [Lab0](lab0.md) (optional, but **highly** recommended, and it will be counted as extra credit)
+    - Solution: [head.c](https://github.com/wildart/xv6-public/blob/lab0-solution/head.c)
 - [Lab1](lab1.md)
 - [Lab2](lab2.md)
 - [Lab3](lab3.md)

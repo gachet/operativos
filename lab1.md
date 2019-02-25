@@ -187,6 +187,10 @@ The function `main()` **must** terminate with a call to `exit()` and
 not `return()` or simply fall off the end of the routine.
 This is a **very** common source of compilation errors.
 
+The `date.c` and `date.h` files are already added to `runoff.list` so that
+the commands `make dist-test` and `make tar` will work correctly. In future
+projects, you will need to add new source code files to `runoff.list` yourself.
+
 
 ## Part 3: Control-P (30 pts)
 

@@ -1,5 +1,9 @@
 # Lab 1
 
+[Lab 1 Rubric](lab1-rubric.md)
+
+[Lab 1 Report (Example)](lab1-report-example.md)
+
 ## Academic Honesty
 Aside from the narrow exception for collaboration on homework, all work submitted in this course must be your own. Cheating and plagiarism will not be tolerated. If you have any questions about a specific case, please ask me.
 

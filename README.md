@@ -8,7 +8,10 @@ First step is setup of a xv6 local development environment. Follow the [xv6 inst
 
 - [Lab0](lab0.md) (optional, but **highly** recommended, and it will be counted as extra credit)
     - Solution: [head.c](https://github.com/wildart/xv6-public/blob/lab0-solution/head.c)
-- [Lab1](lab1.md): [Rubric](lab1-rubric.md) [Lab 1 Report (Example)](lab1-report-example.md) [Lab 1 Report (Example) in PDF](lab1-report-example.pdf)
+- [Lab1](lab1.md):
+    - [Rubric](lab1-rubric.md)
+    - [Lab 1 Report (Example)](lab1-report-example.md)
+    - [Lab 1 Report (Example) in PDF](lab1-report-example.pdf)
 - [Lab2](lab2.md)
 - [Lab3](lab3.md)
 - [Lab4](lab4.md)

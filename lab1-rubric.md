@@ -4,7 +4,7 @@
 
 ## Project Test Report [14 points]
 
-Format must follow [exemplar](lab-report.md) – state test, state test function, state expected result, show result, provide reasoning for why test is success or failure, properly label test **PASS** or **FAIL**.
+Format must follow [exemplar](lab1-report-example.md) – state test, state test function, state expected result, show result, provide reasoning for why test is success or failure, properly label test **PASS** or **FAIL**.
 
 All items are worth 1 point unless stated otherwise. Each section header lists the total points for
 its section. Format must follow exemplar - state test, state expected result, show result, provide sound reasoning for why test is success or failure, properly label test as **PASS** or **FAIL**. Must use screen shots, not copy-paste.

@@ -2,7 +2,7 @@
 
 **If report is not in PDF format, report receives zero points.**
 
-## Project Test Report [14 points]
+## Lab Test Report [14 points]
 
 Format must follow [exemplar](lab1-report-example.md) – state test, state test function, state expected result, show result, provide reasoning for why test is success or failure, properly label test **PASS** or **FAIL**.
 

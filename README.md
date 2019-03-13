@@ -12,7 +12,9 @@ First step is setup of a xv6 local development environment. Follow the [xv6 inst
     - [Rubric](lab1-rubric.md)
     - [Lab 1 Report (Example)](lab1-report-example.md)
     - [Lab 1 Report (Example) in PDF](lab1-report-example.pdf)
+    - [Solution](https://github.com/wildart/xv6-public/tree/lab1-solution)
 - [Lab2](lab2.md)
+    - [Rubric](lab2-rubric.md)
 - [Lab3](lab3.md)
 - [Lab4](lab4.md)
 

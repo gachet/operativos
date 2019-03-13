@@ -34,7 +34,7 @@ If you already cloned this repository, you might want to pull recent changes
 by using `git pull` command.
 
 
-## Part 1: System Call Tracing (20 pts)
+## Part 1: System Call Tracing
 
 Your first task is to modify the xv6 kernel to print out a line for each system call invocation. It is enough to print the name of the system call and the return value; you don't need to print the system call arguments. When completed, you should see output like this when booting xv6:
 
@@ -104,7 +104,7 @@ either. **These are the only two files where you will add code that is not
 subject to conditional compilation.**
 
 
-## Part 2: `date()` System Call (50 pts)
+## Part 2: `date()` System Call
 
 Your second task is to add a new system call to xv6. Having both the system
 call and test program named `date` can be confusing. We will always call
@@ -196,7 +196,7 @@ the commands `make dist-test` and `make tar` will work correctly. In future
 projects, you will need to add new source code files to `runoff.list` yourself.
 
 
-## Part 3: Control-P (30 pts)
+## Part 3: Control-P
 
 The xv6 kernel supports a special control sequence, `control-p`, which
 displays process information on the console (see `console.c`, `case C(’P’)`).

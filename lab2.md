@@ -125,7 +125,7 @@ A new process is allocated in the routine `allocproc()` in the file
 
 ## `ps` Command
 
-Xv6 does not have the `ps` command like Linux, so you will add your own. This command is used to find out information regarding active processes in the system. We define "active" here to be a process in the RUNNABLE, SLEEPING,  RUNNING, or ZOMBIE state. Processes in the UNUSED or EMBRYO states are not considered active. In order to write your `ps` program, you will need to add another system call.
+Xv6 does not have the `ps` command like Linux, so you will add your own. This command is used to find out information regarding active processes in the system. We define "active" here to be a process in the RUNNABLE, SLEEPING,  RUNNING, or ZOMBIE state. Processes in the UNUSED or EMBRYO states are not considered active. In order to write your `ps` program, you will need to add another system call. See [process state transition diagram](xv6-state-transition-model.pdf).
 
 You will find  `struct proc`, *the process structure*, in the file `proc.h`. When xv6 is running, there is an array of `proc struct`s in the data structure named `ptable` in `proc.c`. All information for each process is in a `struct proc` in the `proc[]` array.
 

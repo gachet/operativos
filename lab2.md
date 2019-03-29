@@ -185,7 +185,7 @@ Use this definition for the `uproc` structure. Put it in a file named `uproc.h`.
       uint size;
       char name[STRMAX];
     };
-		#endif  // UPROC_INCLUDE
+    #endif  // UPROC_INCLUDE
 
 
 The value for `STRMAX` should be able to take on *any* non-negative value

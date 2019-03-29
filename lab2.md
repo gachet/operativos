@@ -170,7 +170,7 @@ Your `ps` program should do something sane when an error is returned. You must t
 
 Use this definition for the `uproc` structure. Put it in a file named `uproc.h`.
 
-		#ifndef UPROC_INCLUDE
+    #ifndef UPROC_INCLUDE
     #define UPROC_INCLUDE
     #define STRMAX 32
 

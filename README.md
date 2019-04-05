@@ -16,6 +16,7 @@ First step is setup of a xv6 local development environment. Follow the [xv6 inst
 - [Lab2](lab2.md)
     - [Rubric](lab2-rubric.md)
 - [Lab3](lab3.md)
+    - [Rubric](lab3-rubric.md)
 - [Lab4](lab4.md)
 
 ## QEMU

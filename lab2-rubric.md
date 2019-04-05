@@ -6,7 +6,7 @@
 
 Format must follow [exemplar](lab1-report-example.md) – state test, state test function, state expected result, show result, provide reasoning for why test is success or failure, properly label test **PASS** or **FAIL**.
 
-All items are worth 1 point unless stated otherwise. Each section header lists the total points for its sections Must use screen shots, not copy-paste.
+All items are worth 1 point unless stated otherwise. Each section header lists the total points for its sections. **Must** use screen shots, not copy-paste.
 
 1. with `LAB_NUMBER` flag set to 0 in `Makefile` – [1 Point]
     - Code correctly compiles

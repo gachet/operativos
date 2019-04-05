@@ -444,7 +444,7 @@ This control sequence will print the number of processes that are on the free
 list. Your output will be
 
 ```
-Free List Size: $N$ processes
+Free List Size: N processes
 ```
 where `N` is the number of elements in the free list.
 

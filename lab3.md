@@ -355,11 +355,11 @@ a process from a list, and before you add it to another list.
 For state transitions, you must follow this algorithm. Steps must be in the order listed.
 
 1. Acquire `ptable` lock
-- Remove process from list
-- Assert that the process was in the correct state
-- Update the process
-- Put on new list
-- Release `ptable` lock
+2. Remove process from list
+3. Assert that the process was in the correct state
+4. Update the process
+5. Put on new list
+6. Release `ptable` lock
 
 
 As an example, this is how to perform the state transition when the stack

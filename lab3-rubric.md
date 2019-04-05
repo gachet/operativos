@@ -87,7 +87,7 @@ that function.
 Each of these represents a point that will be deducted from the code section if found.
 
 1. Two (2) spaces of indentation per level must be used. Indentation must use spaces, not tabs.
-- Adding additional fields or modifying the `ptable struct` in ways not stated in the instructions, such as adding all state lists individually to the `ptable`.
-- Adding print statements in `proc.c`, outside of the new control commands.
-- Not holding the `ptable` lock when modifying the state lists [-2 points]
-- Not wrapping your added code in `#ifdef LAB3 ... #endif`
+2. Adding additional fields or modifying the `ptable struct` in ways not stated in the instructions, such as adding all state lists individually to the `ptable`.
+3. Adding print statements in `proc.c`, outside of the new control commands.
+4. Not holding the `ptable` lock when modifying the state lists [-2 points]
+5. Not wrapping your added code in `#ifdef LAB3 ... #endif`

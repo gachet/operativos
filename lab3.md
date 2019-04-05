@@ -87,7 +87,7 @@ This just packages up the head and tail pointers in a `struct`, so we can put th
 Next, add this constant definition,
 ```c
 #ifdef LAB3
-#define statecount ZOMBIE-UNUSED+1
+#define statecount NELEM(states)
 #endif
 ```
 

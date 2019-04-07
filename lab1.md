@@ -1,4 +1,4 @@
-# Lab 1
+# Lab 1: System Calls
 
 [Lab 1 Rubric](lab1-rubric.md)
 
@@ -6,6 +6,7 @@
 
 ## Academic Honesty
 Aside from the narrow exception for collaboration on homework, all work submitted in this course must be your own. Cheating and plagiarism will not be tolerated. If you have any questions about a specific case, please ask me.
+
 
 ## Introduction
 This project will focus primarily on processes. In this project, you will become familiar with:
@@ -32,6 +33,9 @@ Clone a following repository https://github.com/wildart/xv6-public.git and check
 
 If you already cloned this repository, you might want to pull recent changes
 by using `git pull` command.
+
+In this project you set a `LAB_NUMBER` Makefile flag to value `1` for proper
+conditional compilation.
 
 
 ## Part 1: System Call Tracing
@@ -174,7 +178,6 @@ for our system call will be in another file. You indicate that with the
 
     * `defs.h` is where function prototypes for kernel-wide function calls, that are not in `sysproc.c` or `sysfile.c`, are defined. This file is not modified in project one but will be modified in subsequent projects.
 
-
 ### The `date` Command
 
 We cannot directly test a system call and instead have to write a program that
@@ -307,6 +310,7 @@ Now, you can define functions `procdump_*` to handle specific output required
 for a certain lab. Note that this is just one way to handle the complexities of
 the changes to `procdump()` and you are not required to use this method.
 You can use any method that seems reasonable to you and produces the correct output.
+
 
 ## Submission
 

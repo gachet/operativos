@@ -1,9 +1,10 @@
-# Lab 2
+# Lab 2: Processes
 
 [Lab 2 Rubric](lab2-rubric.md)
 
 ## Academic Honesty
 Aside from the narrow exception for collaboration on homework, all work submitted in this course must be your own. Cheating and plagiarism will not be tolerated. If you have any questions about a specific case, please ask me.
+
 
 ## Introduction
 This project will focus primarily on processes. In this project, you will become familiar with:
@@ -15,6 +16,11 @@ This project will focus primarily on processes. In this project, you will become
 5. Implementing a new user-level command to time process execution.
 6. Writing a project report to properly document project work.
 
+### Reading
+
+The reading for this project is chapters 3 - 4 from the [xv6 Book](xv6-book-rev11.pdf).
+
+
 ## Preparation
 
 Clone a following repository https://github.com/wildart/xv6-public.git and checkout branch **lab2**.
@@ -25,6 +31,9 @@ Clone a following repository https://github.com/wildart/xv6-public.git and check
 
 If you already cloned this repository, you might want to pull recent changes
 by using `git pull` command.
+
+In this project you set a `LAB_NUMBER` Makefile flag to value `2` for proper
+conditional compilation.
 
 
 ## Part 1: UIDs and GIDs and PPIDs
@@ -99,6 +108,7 @@ Use an additional parameter `USE_BUILTINS=1` in `make` command to turn on this f
 
 You should include tests that show the `uid`/`gid` for the shell being changed and that any program you run from the command line inherits the correct uid and gid.
 
+
 ## Part 2: Process Execution Time
 
 Currently, your xv6 system tracks when a process enters the system and
@@ -123,7 +133,7 @@ its CPU. You do not need a `cpu_ticks_out` field.
 A new process is allocated in the routine `allocproc()` in the file
 `proc.c`. Initialize these two new fields to zero in that routine.
 
-## `ps` Command
+### `ps` Command
 
 Xv6 does not have the `ps` command like Linux, so you will add your own. This command is used to find out information regarding active processes in the system. We define "active" here to be a process in the RUNNABLE, SLEEPING,  RUNNING, or ZOMBIE state. Processes in the UNUSED or EMBRYO states are not considered active. In order to write your `ps` program, you will need to add another system call. See [process state transition diagram](xv6-state-transition-model.pdf).
 
@@ -191,6 +201,7 @@ Use this definition for the `uproc` structure. Put it in a file named `uproc.h`.
 The value for `STRMAX` should be able to take on *any* non-negative value
 and your routine should still work correctly.
 
+
 ## Part 3: `time` Command
 
 Your `time` command will determine the number of seconds that a program takes to run. Below is an example of the command execution:
@@ -245,6 +256,7 @@ called `ticks`. If you review the list of system calls, you will find
 an existing call that will suffice.
 
 You will add the `time` command to your system the same way that you added your `date` command.
+
 
 ## Submission
 

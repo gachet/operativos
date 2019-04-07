@@ -49,6 +49,65 @@ Do **not** use the `ptable.proc[]` structure when implementing this lab except
 in `getprocs()`, `procdump()`, and *free* list initialization; use your lists instead.
 
 
+## Overview
+In class, you learned about several approaches to scheduling processes. Each has
+its strengths and weaknesses. One approach was called "Muli-Level Feedback Queue" or MLFQ.
+You will implement a variation that uses a slightly different approach
+for preventing process starvation.
+
+The approach that you will implement utilizes both "demotion", based on a
+*budget*, for fairness and "periodic promotion" for starvation prevention.
+
+
+## Process Priority
+Each process will have an associated priority (as a `uint`) in the range `[0, MAXPRIO]`
+that will dictate the ready list to which it belongs when in the `RUNNABLE` state.
+This means that there are `MAXPRIO+1`possible priorities for each process.
+Upon allocation, each process will have the same initial (default) priority value,
+the highest priority. The process priority value may be changed programatically
+during process execution via the `setpriority()` system call.
+
+The highest priority in the system will be `MAXPRIO` with each value less than
+`MAXPRIO` being a successively lower priority, the lowest being `0`. That is,
+
+$$\begin{align*}
+  & \forall P_{i} \in \{0, 1, 2, \ldots{} \textrm{MAXPRIO}\},\\
+  & P_{MAXPRIO} > P_{MAXPRIO-1} > \ldots > P_{0}
+\end{align*}$$
+
+**Note:** Because the priority field is an unsigned integer `uint` there cannot
+be a negative priority.
+
+### Modifying the *Ready* List
+You will need to change your declaration of the ready list in `struct ptable` to the following:
+
+```c
+  #define statecount NELEM(states)
+
+  static struct {
+    struct spinlock lock;
+    struct proc proc[NPROC];
+    struct ptrs list[statecount];
+    struct ptrs ready[MAXPRIO+1];
+    uint PromoteAtTime;
+  } ptable;
+```
+
+where each index of the *ready* list corresponds to a priority queue in the MLFQ.
+You will need to modify your *ready* list code (including `initProcessLists`)
+to now work with process priority. Observe that your invariant for the *ready*
+list will now change to the following:
+
+- the *ready* lists contain all of the `RUNNABLE` processes in the system with each process in `ptable.ready[i]` having a priority of $i$, $0 \leq i \leq \textrm{MAXPRIO}$.
+
+Be careful when modifying the *ready* list insertion code in `kill()`,
+especially if you are using the old routine.
+
+
+## The `setpriority()` and `getpriority()` System Calls
+
+
+
 ## Submission
 
 Follow [submission guide](submission.md) to prepare your lab report and source code for evaluation.

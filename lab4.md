@@ -70,10 +70,9 @@ during process execution via the `setpriority()` system call.
 The highest priority in the system will be `MAXPRIO` with each value less than
 `MAXPRIO` being a successively lower priority, the lowest being `0`. That is,
 
-$$\begin{align*}
-  & \forall P_{i} \in \{0, 1, 2, \ldots{} \textrm{MAXPRIO}\},\\
-  & P_{MAXPRIO} > P_{MAXPRIO-1} > \ldots > P_{0}
-\end{align*}$$
+- ∀ Pᵢ ∈ {0, 1, 2, ..., MAXPRIO}
+
+- P(MAXPRIO) > P(MAXPRIO-1) > ... > P(0)
 
 **Note:** Because the priority field is an unsigned integer `uint` there cannot
 be a negative priority.
@@ -98,9 +97,9 @@ You will need to modify your *ready* list code (including `initProcessLists`)
 to now work with process priority. Observe that your invariant for the *ready*
 list will now change to the following:
 
-- the *ready* lists contain all of the `RUNNABLE` processes in the system with each process in `ptable.ready[i]` having a priority of $i$, $0 \leq i \leq \textrm{MAXPRIO}$.
+- the *ready* lists contain all of the `RUNNABLE` processes in the system with each process in `ptable.ready[i]` having a priority of `i`, `0 ≤ i ≤ MAXPRIO`.
 
-Be careful when modifying the *ready* list insertion code in `kill()`,
+**Note:** Be careful when modifying the *ready* list insertion code in `kill()`,
 especially if you are using the old routine.
 
 

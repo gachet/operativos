@@ -112,7 +112,7 @@ You should include tests that show the `uid`/`gid` for the shell being changed a
 ## Part 2: Process Execution Time
 
 Currently, your xv6 system tracks when a process enters the system and
-displays *elapsed* time in the console command "control-p". You will now
+displays *elapsed* time in the console command **ctrl-p**. You will now
 track how much CPU time a process uses.
 
 There are two situations where a context switch occurs in xv6: one to put

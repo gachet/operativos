@@ -35,7 +35,7 @@ All tests should be done with your `LAB_NUMBER` flag set to `3` in `Makefile`:
     - Show the kill system call correctly causes a process to move to the zombie list.
     - Show the exit system call correctly causes a process to move to the zombie list.
     - Show the wait system call correctly causes a process to move to the free list.
-6. Show the console commands **control-r**, **control-s**, **control-f**, and **control-z** are correct.
+6. Show the console commands **ctrl-r**, **ctrl-s**, **ctrl-f**, and **ctrl-z** are correct.
 
 ## Code [36 points]
 
@@ -76,13 +76,13 @@ that function.
 (Again, this doesn't have to be done in a helper function but it is the cleanest way.)
 
 ### Control Commands [4 points]
-1. Correctly adds code for detecting and handling **control-r**, **control-s**, **control-f**, and **control-z** in `console.c`
+1. Correctly adds code for detecting and handling **ctrl-r**, **ctrl-s**, **ctrl-f**, and **ctrl-z** in `console.c`
 2. Correctly performs all list interactions and printing in `proc.c`
 3. Each command correctly prints all required information
 4. Each command prints in the expected format
 
 
-### Coding Style – [up to -6 Points]
+### Coding Style [up to -6 Points]
 
 Each of these represents a point that will be deducted from the code section if found.
 

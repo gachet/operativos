@@ -8,31 +8,31 @@ Format must follow [exemplar](lab1-report-example.md) – state test, state test
 
 All items are worth 1 point unless stated otherwise. Each section header lists the total points for its sections. **Must** use screen shots, not copy-paste.
 
-1. with `LAB_NUMBER` flag set to 0 in `Makefile` – [1 Point]
+1. with `LAB_NUMBER` flag set to 0 in `Makefile` [1 Point]
     - Code correctly compiles
 
     All remaining tests must have the `LAB_NUMBER` flag set to **2** in the `Makefile`.
 
-2. With your UID/GID test program: – [2 Points]
+2. With your UID/GID test program: [2 Points]
     - Correctly set / get UID and GID and get PPID.
     - Correctly handle attempting to set UID and GID to invalid numbers.
 
-3. Show that `Control-p` correctly prints all new information.
+3. Show that **ctrl-p** correctly prints all new information.
 
-4. Test for correct output of ps command. (Compare to original `Control-p` behavior)
+4. Test for correct output of ps command. (Compare to original **ctrl-p** behavior)
 
 4. Test the built-in shell commands to set UID and GID, and show that child processes correctly inherit the new UID and GID values. (`ps` command can do this)
 
 5. Tests for `getprocs()` with with 64 active processes. [2 Points]
     - Correct output with MAX set to 1, 16, 64, 72
-    - Correctly use `Control-p` as a comparison. (Using `wait()` in your test program will help)
+    - Correctly use **ctrl-p** as a comparison. (Using `wait()` in your test program will help)
 
-6. Test for the correct elapsed CPU time in `Control-p`
+6. Test for the correct elapsed CPU time in **ctrl-p**
 
-7. Tests for the `time` command – [3 Points]
+7. Tests for the `time` command [3 Points]
     - Call with no arguments and an invalid argument
     - Call with a valid command argument that takes an argument
-    - Show that the calculated time is accurate (`Control-p` elapsed time before and after on a long process would work fine). For example, the date command can help:
+    - Show that the calculated time is accurate (**ctrl-p** elapsed time before and after on a long process would work fine). For example, the date command can help:
 
             $ date; time usertests; date
 
@@ -45,11 +45,11 @@ correctly.
 **The code submission must be the file created by running the `make tar` command in your project directory. Submitting code in any format not produced by `make tar` will result in zero points for the code section.**
 
 
-1. Submission – [2 Points]
+1. Submission [2 Points]
     1. Correctly compiles and boots `LAB_NUMBER` flag set to 0 in `Makefile`
     2. Correctly compiles and boots `LAB_NUMBER` flag set to 2 in `Makefile`
 
-2. UID/GID/PPID System Calls – [7 points]
+2. UID/GID/PPID System Calls [7 points]
     1. Correct implementation of UID and GID in proc struct
     2. Correct implementation of `setuid`, `setgid`, `getuid`, and `getgid`
     Must ensure that the setters for UID or GID values are inside the range 0 ≤ x ≤ 32767.
@@ -60,12 +60,12 @@ correctly.
     6. Correct implementation of `getppid()`, properly handling `init`'s parent
     7. Grader tests `testsetuid` & `testuidgid` works correctly for this test
 
-3. CPU Time – [3 points]
+3. CPU Time [3 points]
     1. Correct location when setting cpu ticks in
     2. Updates cpu ticks total in correct location
     3. Grader test suite `lab2-test` works correctly for this test
 
-4. `getprocs()` System Call – [8 points]
+4. `getprocs()` System Call [8 points]
     1. Correct usage of `argint()` and `argptr()`
     2. Interacts with `ptable` only in `proc.c`
     3. Correctly copies all `proc struct` values to `uproc` structure
@@ -77,11 +77,11 @@ correctly.
 
 5. `ps` Command [4 points]
     1. Error checks for getprocs return
-    2. Is consistent with `Control-p`
+    2. Is consistent with **ctrl-p**
     3. Correct use of malloc() and free()
     4. Correctly displays all information from `getprocs`
 
-6. `Control-p` – [3 points]
+6. ctrl-p [3 points]
     1. New headers are correct and output aligned
     2. Displays UID, GID, PPID
     3. Displays CPU total time correctly formatted
@@ -95,7 +95,7 @@ correctly.
     6. Correct calculation and formatting of the elapsed time
     7. Test suite works correctly for this test
 
-### Coding Style – [up to -5 Points]
+### Coding Style [up to -5 Points]
 
 Each of these represents a point that will be deducted from the code section if found.
 

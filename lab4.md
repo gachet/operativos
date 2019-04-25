@@ -112,7 +112,7 @@ The function prototypes are
     int getpriority(int pid);
 ```
 
-where priority ranges from `[0,...,MAXPRIO]`. The setpriority() system call will have the
+where priority ranges from `[0,...,MAXPRIO]`. The `setpriority()` system call will have the
 effect of setting the priority for an active process with PID `pid` to `priority` and
 resetting the *budget* to the default value. Return an error if the values for `pid`
 or `priority` are not correct.
@@ -167,7 +167,7 @@ you will ignore it for this project. You'll need to initialize `PromoteAtTime` t
 `ticks + TICKS_TO_PROMOTE` in `userinit()`, because the scheduler will expect
 `PromoteAtTime` to be set to some sane value as soon as it starts running.
 
-2. Create a constant definition `#define TICKS_TO_PROMOTE XXX` in `custom.h`,
+2. Create a constant definition `#define TICKS_TO_PROMOTE XXX` in `param.h`,
 where `XXX` is the number of ticks that will elapse before all the priorities are adjusted.
 Each time that the routine `scheduler()` runs, check to see if it is time to adjust priorities.
 

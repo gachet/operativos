@@ -13,7 +13,7 @@ You **must** have all of Lab 2 finished, except for the `time` command. You **mu
 
 ## Introduction
 
-In the previous lab, you rewrote the old `scheduler()` to use the ready
+In the previous lab, you rewrote the old `scheduler()` to use the *ready*
 list when searching for a `RUNNABLE` process instead of iterating through the
 process array. Your rewritten scheduler is still functionally equivalent to the
 old one: both are simple, round-robin schedulers, but the new one changes the
@@ -61,7 +61,7 @@ The approach that you will implement utilizes both "demotion", based on a
 
 ## Process Priority
 Each process will have an associated priority (as a `uint`) in the range `[0,...,MAXPRIO]`
-that will dictate the ready list to which it belongs when in the `RUNNABLE` state.
+that will dictate the *ready* list to which it belongs when in the `RUNNABLE` state.
 This means that there are `MAXPRIO+1` possible priorities for each process.
 Upon allocation, each process will have the same initial (default) priority value,
 the highest priority. The process priority value may be changed programatically
@@ -78,7 +78,7 @@ The highest priority in the system will be `MAXPRIO` with each value less than
 be a negative priority.
 
 ### Modifying the *Ready* List
-You will need to change your declaration of the ready list in `struct ptable` to the following:
+You will need to change your declaration of the *ready* list in `struct ptable` to the following:
 
 ```c
   #define statecount NELEM(states)
@@ -179,7 +179,7 @@ exceed the `PromoteAtTime` value. Be careful with your algorithm!):
     - Change the priority queue for a process as appropriate. Put any adjusted processes on the back of the queue. Do not move processes for which the priority was not adjusted.
     - Set the value for `PromoteAtTime` to `ticks + TICKS_TO_PROMOTE`. 
 
-**Note:** Initially setting the budget to 300 and `TICKS_TO_PROMOTE` to 3000 produces reasonable
+**Note:** Initially setting the *budget* to 300 and `TICKS_TO_PROMOTE` to 3000 produces reasonable
 behavior your development. You may need to change these values to test all functionality.
 
 

@@ -280,7 +280,7 @@ You will need at least one test that shows the correct priority level
 information for both the `ps` and **ctrl-p** commands.
 
 An example program that creates many children and causes them to periodically
-reset their priority is `schedtest.c`. You are free to use or modify this program
+reset their priority is `testsched.c`. You are free to use or modify this program
 as you see fit for testing.
 
 You will have to give some thought as to where to put the logic that updates the

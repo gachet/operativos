@@ -1,5 +1,9 @@
 # CSCI 375 - Operating Systems
 
+## Final Exam
+
+[Final Exam Topics](final-topics.md)
+
 ## Labs
 
 Course xv6 repository: https://github.com/wildart/xv6-public.git

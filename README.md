@@ -1,5 +1,9 @@
 # CSCI 375 - Operating Systems
 
+## Course Info
+
+[Syllabus](syllabus.md)
+
 ## Final Exam
 
 [Final Exam Topics](final-topics.md)
